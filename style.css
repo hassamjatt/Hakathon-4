@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF; /* Alice Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+form, .resume-preview {
+    margin-top: 20px;
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resume-preview {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@media print {
+    /* Hide form when printing */
+    form {
+        display: none;
+    }
+
+    /* Ensure only the resume preview prints */
+    .resume-preview {
+        border: none;
+        background: none;
+    }
+}

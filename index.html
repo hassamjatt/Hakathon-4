@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resume-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter your location">
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+
+            <button type="button" onclick="generatePDF()">Download PDF</button>
+        </form>
+
+        <div class="resume-preview" id="resume-preview">
+            <h2 id="preview-name">Your Name</h2>
+            <p id="preview-email">Your Email</p>
+            <p id="preview-location">Your Location</p>
+            <p id="preview-bio">Your Bio</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
